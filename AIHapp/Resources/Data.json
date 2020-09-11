@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Turtle Rock",
+        "category": "Featured",
+        "city": "Twentynine Palms",
+        "state": "California",
+        "id": 1001,
+        "park": "Joshua Tree National Park",
+        "eyeColor": "black",
+        "hairColor": "black",
+        "imageName": "turtlerock"
+    },
+    {
+        "name": "Silver Salmon Creek",
+        "category": "Lakes",
+        "city": "Port Alsworth",
+        "state": "Alaska",
+        "id": 1002,
+        "park": "Lake Clark National Park and Preserve",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "silversalmoncreek"
+    },
+    {
+        "name": "Chilkoot Trail",
+        "category": "Rivers",
+        "city": "Skagway",
+        "state": "Alaska",
+        "id": 1003,
+        "park": "Klondike Gold Rush National Historical Park",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "chilkoottrail"
+    },
+    {
+        "name": "St. Mary Lake",
+        "category": "Lakes",
+        "city": "Browning",
+        "state": "Montana",
+        "id": 1004,
+        "park": "Glacier National Park",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "stmarylake"
+    },
+    {
+        "name": "Twin Lake",
+        "category": "Lakes",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "park": "Lake Clark National Park and Preserve",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "twinlake"
+    },
+    {
+        "name": "Lake McDonald",
+        "category": "Lakes",
+        "city": "West Glacier",
+        "state": "Montana",
+        "id": 1006,
+        "park": "Glacier National Park",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "lakemcdonald"
+    },
+    {
+        "name": "Charley Rivers",
+        "category": "Rivers",
+        "city": "Eaking",
+        "state": "Alaska",
+        "id": 1007,
+        "park": "Charley Rivers National Preserve",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "yukon_charleyrivers"
+    },
+    {
+        "name": "Icy Bay",
+        "category": "Lakes",
+        "city": "Icy Bay",
+        "state": "Alaska",
+        "id": 1008,
+        "park": "Wrangell-St. Elias National Park and Preserve",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "icybay"
+    },
+    {
+        "name": "Rainbow Lake",
+        "category": "Lakes",
+        "city": "Willow",
+        "state": "Alaska",
+        "id": 1009,
+        "park": "State Recreation Area",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "rainbowlake"
+    },
+    {
+        "name": "Hidden Lake",
+        "category": "Lakes",
+        "city": "Newhalem",
+        "state": "Washington",
+        "id": 1010,
+        "park": "North Cascades National Park",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "hiddenlake"
+    },
+    {
+        "name": "Chincoteague",
+        "category": "Rivers",
+        "city": "Chincoteague",
+        "state": "Virginia",
+        "id": 1011,
+        "park": "Chincoteague National Wildlife Refuge",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "chincoteague"
+    },
+    {
+        "name": "Lake Umbagog",
+        "category": "Lakes",
+        "city": "Errol",
+        "state": "New Hampshire",
+        "id": 1012,
+        "park": "Umbagog National Wildlife Refuge",
+        "eyeColor": "red",
+        "hairColor": "black",
+        "imageName": "umbagog"
+    }
+]
+
