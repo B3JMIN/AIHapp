@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct HomePage: View {
+    @State var showMenu:Bool = false
     
     @EnvironmentObject var viewRouter: ViewRouter
     
@@ -18,6 +19,7 @@ struct HomePage: View {
             Button(action: {self.viewRouter.currentPage = "CameraView"}){
                 Text("Start")
             }
+            
             Image("AIH-logo").resizable()
                 .frame(width: 100, height: 100, alignment: .center)
         }
