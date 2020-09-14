@@ -14,14 +14,42 @@ struct HomePage: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        VStack {
-            Text("here is the main home page")
-            Button(action: {self.viewRouter.currentPage = "CameraView"}){
-                Text("Start")
+        
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
             }
-            
-            Image("AIH-logo").resizable()
-                .frame(width: 100, height: 100, alignment: .center)
+        
+        return NavigationView {
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    MainView(showMenu: self.$showMenu)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .offset(x: self.showMenu ? geometry.size.width/2 : 0)
+                        .disabled(self.showMenu ? true : false)
+                    if self.showMenu {
+                        SideMenu()
+                            .frame(width: geometry.size.width/2)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                    .gesture(drag)
+            }
+                .navigationBarTitle("Home", displayMode: .inline)
+                .navigationBarItems(leading: (
+                    Button(action: {
+                        withAnimation {
+                            self.showMenu.toggle()
+                        }
+                    }) {
+                        Image(systemName: "line.horizontal.3")
+                            .imageScale(.large)
+                    }
+                ))
         }
     }
 }
@@ -29,5 +57,68 @@ struct HomePage: View {
 struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
         HomePage().environmentObject(ViewRouter())
+    }
+}
+
+
+struct MainView: View {
+    @EnvironmentObject var viewRouter:ViewRouter
+    @Binding var showMenu: Bool
+    
+    var body: some View {
+        VStack {
+            Image("AIH-logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width:100,height:100)
+                .padding(5)
+            Spacer()
+            Button(action: {
+                self.viewRouter.currentPage = "CameraView"
+            }) {
+                Image(systemName:"camera.fill")
+                    .imageScale(.large)
+            }
+            Spacer()
+        }
+    }
+}
+
+
+//struct GradientBackgroundStyle: ButtonStyle {
+//
+//    func makeBody(configuration: Self.Configuration) -> some View {
+//        configuration.label
+//            .frame(minWidth: 0, maxWidth: .infinity)
+//            .padding()
+//            .foregroundColor(.white)
+//            .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
+//            .cornerRadius(40)
+//            .padding(.horizontal, 20)
+//    }
+//}
+
+
+struct UniversalButtonStyle: ButtonStyle {
+//    var bgColor: Color
+
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .frame(minWidth:0, maxWidth:.infinity)
+            .padding()
+            .background(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .shadow(color: .white, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -5: -15, y: configuration.isPressed ? -5: -15)
+                        .shadow(color: .black, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 5: 15, y: configuration.isPressed ? 5: 15)
+                        .blendMode(.overlay)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.blue)
+                }
+        )
+            .scaleEffect(configuration.isPressed ? 0.95: 1)
+            .foregroundColor(.primary)
+            .animation(.spring())
+            .padding(.horizontal,20)
     }
 }

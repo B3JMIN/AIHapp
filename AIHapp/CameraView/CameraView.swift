@@ -33,9 +33,7 @@ struct CameraView: View {
                         // search in group
                     }) {
                         Text("Search Group")
-                    }
-                    .foregroundColor(Color.white)
-                    .padding(.horizontal)
+                    }.buttonStyle(UniversalButtonStyle())
                 }
             }
             image?.resizable()
@@ -54,13 +52,14 @@ struct CameraView: View {
                     .foregroundColor(Color.white)
                     .cornerRadius(10)
                     Spacer()
-                    Button("Take Photo"){
+                    Button(action: {
                         self.showImagePicker = true
                         self.useCamera = true
-                    }.padding()
-                        .background(Color.green)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(10)
+                    }){
+                        HStack {
+                            Text("Take Picture").font(.title)
+                        }
+                    }
                 }
                 Button(action: {
                     self.viewRouter.currentPage = "CameraResult"
@@ -68,7 +67,7 @@ struct CameraView: View {
                 }) {
                 Text("Search")
                     .padding(.bottom)
-                }
+                }.buttonStyle(UniversalButtonStyle())
                 }
         }.sheet(isPresented: self.$showImagePicker){
             PhotoCaptureView(showImagePicker: self.$showImagePicker, image:self.$image, useCamera: self.$useCamera)

@@ -28,6 +28,8 @@ struct Home: View {
                 PersonDetail()
             }else if viewRouter.currentPage == "HomePage" {
                 HomePage()
+            }else if viewRouter.currentPage == "GroupSearch"{
+                GroupSearch()
             }
         }
     }

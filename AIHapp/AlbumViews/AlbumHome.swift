@@ -7,15 +7,24 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct AlbumHome: View {
+    @EnvironmentObject var viewRouter:ViewRouter
+    
+//    @State private var isSelected:Bool
+//    @State var photoResult: [UIImage] = []
+//    Here we plan to use a beta version of PH
+//    var config: PHPickerConfiguration  {
+//        var config = PHPickerConfiguration(ph)
+//    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("need to be done")
     }
 }
 
 struct AlbumHome_Previews: PreviewProvider {
     static var previews: some View {
-        AlbumHome()
+        AlbumHome().environmentObject(ViewRouter())
     }
 }

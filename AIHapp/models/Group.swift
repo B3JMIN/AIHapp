@@ -7,12 +7,18 @@
 //
 //
 import SwiftUI
+import Foundation
 
-struct Group:Identifiable, Hashable{
-    var id: ObjectIdentifier
-    var GroupName: String
-    
-    mutating func editGroup() {
-        
-    }
+
+struct Group:Identifiable, Codable{
+    var id: String?
+    var title:String
+    var completed:Bool
+    var personNumber:Int
 }
+
+
+let TestGroup = [
+    Group(id: "hello", title: "Hello World", completed: true, personNumber: 14),
+    Group(id:"thanks", title: "good morning", completed: false, personNumber: 7)
+]

@@ -9,11 +9,18 @@
 import SwiftUI
 
 struct SliderView: View {
-    @State private var celius: Double = 0
+    
+    @State private var sliderValue: Double = 0
+    var minimumValue = 0.0
+    var maximumValue = 100.0
+    
     var body: some View {
         VStack {
-            Slider(value:$celius, in: -100...100, step:0.1)
-            Text("\(celius) Celius is \(celius) 10 Celius")
+            HStack {
+                Text("\(Int(minimumValue))")
+                Slider(value: $sliderValue, in: minimumValue...maximumValue)
+                Text("\(Int(maximumValue))")
+            }.padding()
         }
     }
 }

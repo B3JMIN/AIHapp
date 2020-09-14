@@ -9,16 +9,36 @@
 import SwiftUI
 
 struct SideMenu: View {
+    @EnvironmentObject var viewRouter:ViewRouter
+    
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName:"person")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Profile")
-                .foregroundColor(.gray)
-                .font(.title)
-            }
+//            HStack {
+//                Image(systemName:"person")
+//                    .foregroundColor(.gray)
+//                    .imageScale(.large)
+//                Button(action: {
+//                    self.viewRouter.currentPage = "GroupSearch"
+//                }) {
+//                Text("Group")
+//                    .foregroundColor(.blue)
+//                    .font(.title)
+//                }
+//
+//            }
+                HStack {
+                    Image(systemName:"person")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    Button(action: {
+                        self.viewRouter.currentPage = "GroupSearch"
+                    }) {
+                    Text("Group")
+                        .foregroundColor(.blue)
+                        .font(.title)
+                    }
+
+                }
             .padding(.top,30)
             HStack {
                 Image(systemName:"envelope")
@@ -30,10 +50,10 @@ struct SideMenu: View {
             }
             .padding(.top,30)
             HStack {
-                Image(systemName:"gear")
+                Image(systemName:"person")
                     .foregroundColor(.gray)
                     .imageScale(.large)
-                Text("Settings")
+                Text("Logout")
                     .foregroundColor(.gray)
                     .font(.headline)
             }
@@ -50,6 +70,6 @@ struct SideMenu: View {
 
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenu()
+        SideMenu().environmentObject(ViewRouter())
     }
 }

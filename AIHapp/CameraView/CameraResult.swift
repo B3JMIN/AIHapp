@@ -14,6 +14,17 @@ struct CameraResult: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.blue)
+                    .imageScale(.large)
+                    .padding()
+                Spacer()
+                Text("Select Group")
+                    .foregroundColor(.blue)
+                .bold()
+                .padding()
+            }
             Image("blankImage")
             HStack {
                 SmallPortrait(portrait: "turtlerock")
@@ -26,10 +37,10 @@ struct CameraResult: View {
             }
             Button(action: {
                 self.viewRouter.currentPage = "HistoryDateSelector"
-            }) {
+                }) {
             Text("History Search")
-                .padding(.top)
-            }
+            }.buttonStyle(UniversalButtonStyle())
+            // do some styling for the button
         }
     }
 }
