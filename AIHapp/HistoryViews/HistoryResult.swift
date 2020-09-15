@@ -16,6 +16,26 @@ struct HistoryResult: View {
     @State var resultEndDate = Date()
     
     var body: some View {
+        VStack {
+            HStack {
+                Button(action: {
+                    self.viewRouter.currentPage = "HomePage"
+                }){
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.blue)
+                    .imageScale(.large)
+                    .padding()
+                }
+                Spacer()
+                Text("History")
+                    .bold()
+                    .font(.largeTitle)
+                    .frame(width:100, height: 100, alignment: .center)
+                Text("Search")
+                    .foregroundColor(.blue)
+                .bold()
+                .padding()
+            }
             Form {
                 DatePicker("Start", selection: $resultStartDate, displayedComponents: .date)
                 DatePicker("End", selection: $resultEndDate, displayedComponents: .date)
@@ -85,6 +105,8 @@ struct HistoryResult: View {
             .edgesIgnoringSafeArea(.top)
         }
     }
+}
+
 
 struct HistoryResult_Previews: PreviewProvider {
     static var previews: some View {

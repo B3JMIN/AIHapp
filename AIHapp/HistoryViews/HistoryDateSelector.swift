@@ -18,12 +18,28 @@ struct HistoryDateSelector: View {
     var body: some View {
         VStack {
             HStack {
+                Button(action:{
+                    self.viewRouter.currentPage = "HomePage"
+                }){
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.blue)
+                    .imageScale(.large)
+                    .padding()
+                }
+                Spacer()
+                Text("History")
+                    .font(.largeTitle)
+                    .bold()
+                    .frame(alignment: .center)
                 Spacer()
                 Button(action: {
                     self.viewRouter.currentPage = "HistoryResult"
-                }) {
-                    Text("Search")
-                }
+                }){
+                Text("Search")
+                    .foregroundColor(.blue)
+                    .bold()
+                    .padding()
+            }
             }
             Form {
                 DatePicker("Start", selection: $selectedStartDate, displayedComponents: .date)
