@@ -13,19 +13,19 @@ struct SideMenu: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-//            HStack {
-//                Image(systemName:"person")
-//                    .foregroundColor(.gray)
-//                    .imageScale(.large)
-//                Button(action: {
-//                    self.viewRouter.currentPage = "GroupSearch"
-//                }) {
-//                Text("Group")
-//                    .foregroundColor(.blue)
-//                    .font(.title)
-//                }
-//
-//            }
+            HStack {
+                Image(systemName:"person")
+                    .foregroundColor(.gray)
+                    .imageScale(.large)
+                Button(action: {
+                    self.viewRouter.currentPage = "GroupSearch"
+                }) {
+                Text("Group")
+                    .foregroundColor(.blue)
+                    .font(.title)
+                }
+
+            }
                 HStack {
                     Image(systemName:"person")
                         .foregroundColor(.gray)

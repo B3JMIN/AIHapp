@@ -21,8 +21,8 @@ struct Similarity: View {
             
             VStack {
                 SimilarityBar(similarity: similarityValue)
-                    .frame(width: 175.0, height: 175.0)
-                    .padding(40.0)
+                    .frame(width: 150.0, height: 150.0)
+                    .padding(20.0)
                 
                 Spacer()
             }

@@ -30,6 +30,14 @@ struct Home: View {
                 HomePage()
             }else if viewRouter.currentPage == "GroupSearch"{
                 GroupSearch()
+            }else if viewRouter.currentPage == "StructView"{
+                StructView()
+            }else if viewRouter.currentPage == "GroupAddImage"{
+                GroupAddImage(showImagePicker: .constant(false), image: .constant(Image("")), useCamera: .constant(false))
+            }else if viewRouter.currentPage == "EditImagePage"{
+                EditImage()
+            }else if viewRouter.currentPage == "SaveImagePage"{
+                SaveImage()
             }
         }
     }

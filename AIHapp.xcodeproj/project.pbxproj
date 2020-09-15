@@ -33,6 +33,12 @@
 		43659E69250FB590008E128D /* GroupSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E68250FB590008E128D /* GroupSearch.swift */; };
 		43659E6B250FE2DF008E128D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E6A250FE2DF008E128D /* SearchResult.swift */; };
 		43659E6D250FEE00008E128D /* TypicalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E6C250FEE00008E128D /* TypicalButton.swift */; };
+		43659E6F2511064E008E128D /* PicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E6E2511064E008E128D /* PicCell.swift */; };
+		43659E712511078D008E128D /* StructView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E702511078D008E128D /* StructView.swift */; };
+		43659E7325112556008E128D /* GroupAddImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7225112556008E128D /* GroupAddImage.swift */; };
+		43659E7925116276008E128D /* GroupAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7825116276008E128D /* GroupAdd.swift */; };
+		43659E7B251164C9008E128D /* EditImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7A251164C9008E128D /* EditImage.swift */; };
+		43659E7D251164D6008E128D /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7C251164D6008E128D /* SaveImage.swift */; };
 		43DD8A8525028BE50072A22B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8425028BE50072A22B /* ImagePicker.swift */; };
 		43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */; };
 		43DD8A8B2502BAF70072A22B /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8A2502BAF70072A22B /* TableView.swift */; };
@@ -119,6 +125,12 @@
 		43659E68250FB590008E128D /* GroupSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSearch.swift; sourceTree = "<group>"; };
 		43659E6A250FE2DF008E128D /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		43659E6C250FEE00008E128D /* TypicalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicalButton.swift; sourceTree = "<group>"; };
+		43659E6E2511064E008E128D /* PicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicCell.swift; sourceTree = "<group>"; };
+		43659E702511078D008E128D /* StructView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructView.swift; sourceTree = "<group>"; };
+		43659E7225112556008E128D /* GroupAddImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddImage.swift; sourceTree = "<group>"; };
+		43659E7825116276008E128D /* GroupAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAdd.swift; sourceTree = "<group>"; };
+		43659E7A251164C9008E128D /* EditImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImage.swift; sourceTree = "<group>"; };
+		43659E7C251164D6008E128D /* SaveImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
 		43DD8A8425028BE50072A22B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		43DD8A8A2502BAF70072A22B /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -261,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				43659E68250FB590008E128D /* GroupSearch.swift */,
+				43659E7225112556008E128D /* GroupAddImage.swift */,
+				43659E7825116276008E128D /* GroupAdd.swift */,
 			);
 			path = GroupViews;
 			sourceTree = "<group>";
@@ -273,6 +287,8 @@
 				43659E47250AA51A008E128D /* CameraEdit.swift */,
 				43659E56250AF161008E128D /* CameraResult.swift */,
 				43659E6A250FE2DF008E128D /* SearchResult.swift */,
+				43659E7A251164C9008E128D /* EditImage.swift */,
+				43659E7C251164D6008E128D /* SaveImage.swift */,
 			);
 			path = CameraView;
 			sourceTree = "<group>";
@@ -327,6 +343,7 @@
 				43DD8A952502E17F0072A22B /* Data.swift */,
 				43659E43250983A6008E128D /* Group.swift */,
 				43659E4E250AB20E008E128D /* userDate.swift */,
+				43659E6E2511064E008E128D /* PicCell.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -374,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				43DD8AC2250816510072A22B /* AlbumHome.swift */,
+				43659E702511078D008E128D /* StructView.swift */,
 				43DD8AC4250816650072A22B /* AlbumSelect.swift */,
 				43DD8AC6250816870072A22B /* AlbumResult.swift */,
 			);
@@ -539,19 +557,24 @@
 				434DE89124FFF446000C2356 /* AppDelegate.swift in Sources */,
 				43DD8AA62506AA530072A22B /* PersonList.swift in Sources */,
 				43659E53250AD050008E128D /* Home.swift in Sources */,
+				43659E712511078D008E128D /* StructView.swift in Sources */,
 				434DE89324FFF446000C2356 /* SceneDelegate.swift in Sources */,
 				43659E4A250AA802008E128D /* MetaDataCell.swift in Sources */,
 				43659E57250AF161008E128D /* CameraResult.swift in Sources */,
 				43DD8A962502E1800072A22B /* Data.swift in Sources */,
 				434DE89524FFF446000C2356 /* CameraView.swift in Sources */,
+				43659E7925116276008E128D /* GroupAdd.swift in Sources */,
 				43DD8A8525028BE50072A22B /* ImagePicker.swift in Sources */,
 				43DD8AD72509628E0072A22B /* SmallPortrait.swift in Sources */,
+				43659E7B251164C9008E128D /* EditImage.swift in Sources */,
 				43659E5B250BF966008E128D /* HomePage.swift in Sources */,
 				43DD8ACD250819150072A22B /* DateSelector.swift in Sources */,
 				43DD8AD1250930870072A22B /* SimilarityBar.swift in Sources */,
 				43659E4D250AACBF008E128D /* PersonHost.swift in Sources */,
 				43659E51250AB642008E128D /* PersonSummary.swift in Sources */,
+				43659E6F2511064E008E128D /* PicCell.swift in Sources */,
 				43659E44250983A6008E128D /* Group.swift in Sources */,
+				43659E7D251164D6008E128D /* SaveImage.swift in Sources */,
 				43DD8AA22506A3DE0072A22B /* PersonDetail.swift in Sources */,
 				43DD8A8B2502BAF70072A22B /* TableView.swift in Sources */,
 				43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */,
@@ -565,6 +588,7 @@
 				43DD8AA42506A94C0072A22B /* PersonRow.swift in Sources */,
 				43659E55250AD101008E128D /* ViewRouter.swift in Sources */,
 				43659E67250FB028008E128D /* SliderView.swift in Sources */,
+				43659E7325112556008E128D /* GroupAddImage.swift in Sources */,
 				43659E69250FB590008E128D /* GroupSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

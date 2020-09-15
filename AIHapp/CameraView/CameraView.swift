@@ -66,7 +66,6 @@ struct CameraView: View {
                     print("viewRouter is now \(self.viewRouter.currentPage)")
                 }) {
                 Text("Search")
-                    .padding(.bottom)
                 }.buttonStyle(UniversalButtonStyle())
                 }
         }.sheet(isPresented: self.$showImagePicker){

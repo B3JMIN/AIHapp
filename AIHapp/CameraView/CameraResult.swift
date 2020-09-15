@@ -27,14 +27,17 @@ struct CameraResult: View {
             }
             Image("blankImage")
             HStack {
+                Spacer()
                 SmallPortrait(portrait: "turtlerock")
+                Spacer()
                 SimilarityBar(similarity: 0.5722)
-            }
-            .padding(5)
+            }.padding(.horizontal, 20)
             HStack {
+                Spacer()
                 SmallPortrait(portrait: "chincoteague")
+                Spacer()
                 SimilarityBar(similarity: 0.3434)
-            }
+            }.padding(.horizontal, 20)
             Button(action: {
                 self.viewRouter.currentPage = "HistoryDateSelector"
                 }) {

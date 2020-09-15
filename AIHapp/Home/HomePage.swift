@@ -80,6 +80,11 @@ struct MainView: View {
                     .imageScale(.large)
             }
             Spacer()
+            Button(action:{
+                self.viewRouter.currentPage = "StructView"
+            }) {
+                Text("structView")
+            }
         }
     }
 }
@@ -99,26 +104,3 @@ struct MainView: View {
 //}
 
 
-struct UniversalButtonStyle: ButtonStyle {
-//    var bgColor: Color
-
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .frame(minWidth:0, maxWidth:.infinity)
-            .padding()
-            .background(
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .shadow(color: .white, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -5: -15, y: configuration.isPressed ? -5: -15)
-                        .shadow(color: .black, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 5: 15, y: configuration.isPressed ? 5: 15)
-                        .blendMode(.overlay)
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color.blue)
-                }
-        )
-            .scaleEffect(configuration.isPressed ? 0.95: 1)
-            .foregroundColor(.primary)
-            .animation(.spring())
-            .padding(.horizontal,20)
-    }
-}

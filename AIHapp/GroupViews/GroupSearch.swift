@@ -10,7 +10,9 @@ import SwiftUI
 
 struct GroupSearch: View {
     @EnvironmentObject var viewRouter: ViewRouter
-//    var groups: [group] = TestGroup
+//    @ObservedObject var keyBoardController:
+    @State var isAdding : Bool = false
+    @State private var addedText = ""
     @State private var searchText = ""
       var body: some View {
           VStack(alignment: .leading) {
@@ -24,34 +26,30 @@ struct GroupSearch: View {
                     .padding()
                 }
                 Spacer()
+                Button(action: {
+                    self.isAdding.toggle()
+                }){
                 Text("Add Group")
                     .foregroundColor(.blue)
                 .bold()
                 .padding()
+                }
             }
             List {
                 TextField("Type your search", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 // Here can use a foreach to filter the searching text
                 Form {
+                    if isAdding {
+                        TextField("Call a name for your group", text: $addedText)
+                    }
                     Text("Cross_age")
+                    Text("Hello World")
+                    Text("Good morning")
+                    Text("Group 41")
                 }
-                GroupCell(title: "Hello World", completed: true)
-                GroupCell(title: "Good Morning", completed: false)
-                GroupCell(title: "Group 414", completed: false)
-//              ForEach (self.groups) { group in // (3)
-//                GroupCell(group: group) // (6)
-//              }
-//              .onDelete { indexSet in // (4)
-//                 // The rest of this function will be added later
-//              }
             }
-            Button(action: {}) { // (7)
               HStack {
-                Image(systemName: "plus.circle.fill") //(8)
-                  .resizable()
-                  .frame(width: 20, height: 20) // (11)
-                Text("Add Group") // (9)
                 Button(action: {
                     self.viewRouter.currentPage = "HomePage"
                 }) {
@@ -60,7 +58,6 @@ struct GroupSearch: View {
                 }
 
               }
-            }
             .padding()
             .accentColor(Color(UIColor.systemRed)) // (13)
           }
