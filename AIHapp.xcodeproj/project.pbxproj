@@ -39,6 +39,8 @@
 		43659E7925116276008E128D /* GroupAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7825116276008E128D /* GroupAdd.swift */; };
 		43659E7B251164C9008E128D /* EditImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7A251164C9008E128D /* EditImage.swift */; };
 		43659E7D251164D6008E128D /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E7C251164D6008E128D /* SaveImage.swift */; };
+		43659E81251264DD008E128D /* SearchSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E80251264DD008E128D /* SearchSetting.swift */; };
+		43659E8325126DDE008E128D /* PhotoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E8225126DDE008E128D /* PhotoResult.swift */; };
 		43DD8A8525028BE50072A22B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8425028BE50072A22B /* ImagePicker.swift */; };
 		43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */; };
 		43DD8A8B2502BAF70072A22B /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8A2502BAF70072A22B /* TableView.swift */; };
@@ -67,7 +69,6 @@
 		43DD8AC3250816510072A22B /* AlbumHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC2250816510072A22B /* AlbumHome.swift */; };
 		43DD8AC5250816650072A22B /* AlbumSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC4250816650072A22B /* AlbumSelect.swift */; };
 		43DD8AC7250816870072A22B /* AlbumResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC6250816870072A22B /* AlbumResult.swift */; };
-		43DD8AC9250817BF0072A22B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC8250817BF0072A22B /* CameraController.swift */; };
 		43DD8ACB250818F40072A22B /* HistoryDateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8ACA250818F40072A22B /* HistoryDateSelector.swift */; };
 		43DD8ACD250819150072A22B /* DateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8ACC250819150072A22B /* DateSelector.swift */; };
 		43DD8AD1250930870072A22B /* SimilarityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AD0250930870072A22B /* SimilarityBar.swift */; };
@@ -131,6 +132,8 @@
 		43659E7825116276008E128D /* GroupAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAdd.swift; sourceTree = "<group>"; };
 		43659E7A251164C9008E128D /* EditImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImage.swift; sourceTree = "<group>"; };
 		43659E7C251164D6008E128D /* SaveImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
+		43659E80251264DD008E128D /* SearchSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSetting.swift; sourceTree = "<group>"; };
+		43659E8225126DDE008E128D /* PhotoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResult.swift; sourceTree = "<group>"; };
 		43DD8A8425028BE50072A22B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		43DD8A8A2502BAF70072A22B /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -159,7 +162,6 @@
 		43DD8AC2250816510072A22B /* AlbumHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHome.swift; sourceTree = "<group>"; };
 		43DD8AC4250816650072A22B /* AlbumSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSelect.swift; sourceTree = "<group>"; };
 		43DD8AC6250816870072A22B /* AlbumResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResult.swift; sourceTree = "<group>"; };
-		43DD8AC8250817BF0072A22B /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		43DD8ACA250818F40072A22B /* HistoryDateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDateSelector.swift; sourceTree = "<group>"; };
 		43DD8ACC250819150072A22B /* DateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelector.swift; sourceTree = "<group>"; };
 		43DD8AD0250930870072A22B /* SimilarityBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityBar.swift; sourceTree = "<group>"; };
@@ -232,9 +234,6 @@
 				434DE89024FFF446000C2356 /* AppDelegate.swift */,
 				434DE89224FFF446000C2356 /* SceneDelegate.swift */,
 				43DD8A8A2502BAF70072A22B /* TableView.swift */,
-				43659E54250AD101008E128D /* ViewRouter.swift */,
-				43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */,
-				43DD8A8425028BE50072A22B /* ImagePicker.swift */,
 				434DE89624FFF44D000C2356 /* Assets.xcassets */,
 				434DE89B24FFF44D000C2356 /* LaunchScreen.storyboard */,
 				434DE89E24FFF44D000C2356 /* Info.plist */,
@@ -282,10 +281,13 @@
 		434DE8C224FFF4C7000C2356 /* CameraView */ = {
 			isa = PBXGroup;
 			children = (
+				43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */,
+				43659E8225126DDE008E128D /* PhotoResult.swift */,
 				434DE89424FFF446000C2356 /* CameraView.swift */,
-				43DD8AC8250817BF0072A22B /* CameraController.swift */,
 				43659E47250AA51A008E128D /* CameraEdit.swift */,
+				43659E80251264DD008E128D /* SearchSetting.swift */,
 				43659E56250AF161008E128D /* CameraResult.swift */,
+				43DD8A8425028BE50072A22B /* ImagePicker.swift */,
 				43659E6A250FE2DF008E128D /* SearchResult.swift */,
 				43659E7A251164C9008E128D /* EditImage.swift */,
 				43659E7C251164D6008E128D /* SaveImage.swift */,
@@ -331,6 +333,7 @@
 			children = (
 				43659E52250AD050008E128D /* Home.swift */,
 				43659E5A250BF966008E128D /* HomePage.swift */,
+				43659E54250AD101008E128D /* ViewRouter.swift */,
 				43659E62250C13AD008E128D /* SideMenu.swift */,
 			);
 			path = Home;
@@ -552,6 +555,7 @@
 				43DD8AC7250816870072A22B /* AlbumResult.swift in Sources */,
 				43659E6D250FEE00008E128D /* TypicalButton.swift in Sources */,
 				43659E59250BD5D1008E128D /* HistoryResult.swift in Sources */,
+				43659E8325126DDE008E128D /* PhotoResult.swift in Sources */,
 				43659E6B250FE2DF008E128D /* SearchResult.swift in Sources */,
 				43DD8A942502DD740072A22B /* Person.swift in Sources */,
 				434DE89124FFF446000C2356 /* AppDelegate.swift in Sources */,
@@ -576,6 +580,7 @@
 				43659E44250983A6008E128D /* Group.swift in Sources */,
 				43659E7D251164D6008E128D /* SaveImage.swift in Sources */,
 				43DD8AA22506A3DE0072A22B /* PersonDetail.swift in Sources */,
+				43659E81251264DD008E128D /* SearchSetting.swift in Sources */,
 				43DD8A8B2502BAF70072A22B /* TableView.swift in Sources */,
 				43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */,
 				43659E63250C13AD008E128D /* SideMenu.swift in Sources */,
@@ -584,7 +589,6 @@
 				43DD8AC5250816650072A22B /* AlbumSelect.swift in Sources */,
 				43DD8AC3250816510072A22B /* AlbumHome.swift in Sources */,
 				43DD8ACB250818F40072A22B /* HistoryDateSelector.swift in Sources */,
-				43DD8AC9250817BF0072A22B /* CameraController.swift in Sources */,
 				43DD8AA42506A94C0072A22B /* PersonRow.swift in Sources */,
 				43659E55250AD101008E128D /* ViewRouter.swift in Sources */,
 				43659E67250FB028008E128D /* SliderView.swift in Sources */,

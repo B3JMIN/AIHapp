@@ -20,9 +20,11 @@ struct Home: View {
                 SimilarityBar(similarity: 0.3443)
             }else if viewRouter.currentPage == "CameraResult" {
                 CameraResult()
-            }else if viewRouter.currentPage == "CameraView" {
+            }
+            else if viewRouter.currentPage == "CameraView" {
                 CameraView()
-            }else if viewRouter.currentPage == "HistoryResult" {
+            }
+            else if viewRouter.currentPage == "HistoryResult" {
                 HistoryResult()
             }else if viewRouter.currentPage == "PersonDetail" {
                 PersonDetail()
@@ -38,6 +40,10 @@ struct Home: View {
                 EditImage()
             }else if viewRouter.currentPage == "SaveImagePage"{
                 SaveImage()
+            }else if viewRouter.currentPage == "SearchSettingPage"{
+                SearchSetting()
+            }else if viewRouter.currentPage == "PhotoResult"{
+                PhotoResult()
             }
         }
     }

@@ -16,8 +16,6 @@ struct GroupAddImage: View {
     @Binding var useCamera: Bool
     
     @State var showActionSheet:Bool = false
-//    @State var isShown:Bool = false
-    let cameraController = CameraController()
     
     var body: some View {
         VStack {

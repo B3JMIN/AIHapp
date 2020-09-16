@@ -1,16 +1,15 @@
 //
-//  PersonDetail.swift
+//  EditImage.swift
 //  AIHapp
 //
-//  Created by Cai Huichuan on 2020-09-07.
+//  Created by Cai Huichuan on 2020-09-15.
 //  Copyright © 2020 Cai Huichuan. All rights reserved.
 //
 
 import SwiftUI
 
-struct PersonDetail: View {
-    @EnvironmentObject var viewRouter: ViewRouter
-    
+struct EditImage: View {
+    @EnvironmentObject var viewRouter:ViewRouter
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -53,17 +52,17 @@ struct PersonDetail: View {
                             .frame(width: proxy.size.width, height:proxy.size.height , alignment: .center) // New Code
                 }
             Button(action: {
-                self.viewRouter.currentPage = "HomePage"
+                self.viewRouter.currentPage = "SaveImagePage"
             }) {
-                Text("Home Page")
+                Text("Edit")
             }
         }
-//        .navigationBarTitle(Text(person.name), displayMode: .inline)
+
     }
 }
 
-struct PersonDetail_Previews: PreviewProvider {
+struct EditImage_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetail().environmentObject(ViewRouter())
+        EditImage().environmentObject(ViewRouter())
     }
 }

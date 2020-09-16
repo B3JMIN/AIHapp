@@ -20,28 +20,29 @@ struct CameraResult: View {
                     .imageScale(.large)
                     .padding()
                 Spacer()
-                Text("Select Group")
-                    .foregroundColor(.blue)
-                .bold()
-                .padding()
             }
             Image("blankImage")
-            HStack {
-                Spacer()
-                SmallPortrait(portrait: "turtlerock")
-                Spacer()
-                SimilarityBar(similarity: 0.5722)
+            GeometryReader { geometry in
+                HStack {
+                    SmallPortrait(portrait:"chincoteague")
+                        .frame(width:geometry.size.width/2, height:geometry.size.height/2)
+                    SimilarityBar(similarity:0.3434)
+                        .frame(width:geometry.size.width/2, height:geometry.size.height/2)
+                }.padding(.horizontal, 5)
+                
             }.padding(.horizontal, 20)
-            HStack {
-                Spacer()
-                SmallPortrait(portrait: "chincoteague")
-                Spacer()
-                SimilarityBar(similarity: 0.3434)
+            GeometryReader { geometry in
+                HStack{
+                    SmallPortrait(portrait:"chincoteague")
+                        .frame(width:geometry.size.width/2, height:geometry.size.height/2)
+                    SimilarityBar(similarity:0.3434)
+                        .frame(width:geometry.size.width/2, height: geometry.size.height/2)
+                }.padding(.vertical, 5)
             }.padding(.horizontal, 20)
             Button(action: {
                 self.viewRouter.currentPage = "HistoryDateSelector"
                 }) {
-            Text("History Search")
+            Text("Search History")
             }.buttonStyle(UniversalButtonStyle())
             // do some styling for the button
         }

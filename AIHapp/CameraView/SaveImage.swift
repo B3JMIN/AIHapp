@@ -1,16 +1,15 @@
 //
-//  PersonDetail.swift
+//  SaveImage.swift
 //  AIHapp
 //
-//  Created by Cai Huichuan on 2020-09-07.
+//  Created by Cai Huichuan on 2020-09-15.
 //  Copyright © 2020 Cai Huichuan. All rights reserved.
 //
 
 import SwiftUI
 
-struct PersonDetail: View {
-    @EnvironmentObject var viewRouter: ViewRouter
-    
+struct SaveImage: View {
+    @EnvironmentObject var viewRouter:ViewRouter
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -55,15 +54,15 @@ struct PersonDetail: View {
             Button(action: {
                 self.viewRouter.currentPage = "HomePage"
             }) {
-                Text("Home Page")
+                Text("Save")
             }
         }
-//        .navigationBarTitle(Text(person.name), displayMode: .inline)
+
     }
 }
 
-struct PersonDetail_Previews: PreviewProvider {
+struct SaveImage_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetail().environmentObject(ViewRouter())
+        SaveImage().environmentObject(ViewRouter())
     }
 }

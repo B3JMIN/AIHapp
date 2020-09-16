@@ -15,7 +15,7 @@ struct SideMenu: View {
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName:"person")
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
                     .imageScale(.large)
                 Button(action: {
                     self.viewRouter.currentPage = "GroupSearch"
@@ -28,41 +28,45 @@ struct SideMenu: View {
             }
                 HStack {
                     Image(systemName:"person")
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                         .imageScale(.large)
                     Button(action: {
                         self.viewRouter.currentPage = "GroupSearch"
                     }) {
                     Text("Group")
-                        .foregroundColor(.blue)
+                        .foregroundColor(.white)
                         .font(.title)
                     }
 
                 }
             .padding(.top,30)
             HStack {
-                Image(systemName:"envelope")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Messages")
-                    .foregroundColor(.gray)
+                Button (action: {
+                    self.viewRouter.currentPage = "HistoryResult"
+                }){
+                    Image(systemName: "clock")
+                        .foregroundColor(.white)
+                        .imageScale(.large)
+                Text("Search History")
+                    .foregroundColor(.white)
                     .font(.title)
-            }
-            .padding(.top,30)
-            HStack {
-                Image(systemName:"person")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Logout")
-                    .foregroundColor(.gray)
-                    .font(.headline)
+                }
             }
             .padding(.top,30)
             Spacer()
+            HStack {
+                Image(systemName:"person")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                Text("Logout")
+                    .foregroundColor(.white)
+                    .font(.headline)
+            }
+            .padding(.bottom,30)
             }
         .padding()
         .frame(maxWidth:.infinity, alignment: .leading)
-        .background(Color(red:32/255,green:32/255,blue:32/255))
+        .background(Color.blue)
         .edgesIgnoringSafeArea(.all)
         
     }

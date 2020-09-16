@@ -72,18 +72,18 @@ struct GroupSearch_Previews: PreviewProvider {
 }
 
 
-struct GroupCell: View {
-    var title:String
-    var completed:Bool
-
-  var body: some View {
-    HStack {
-      Image(systemName: completed ? "checkmark.circle.fill" : "circle")
-        .resizable()
-        .frame(width: 20, height: 20)
-      Text(title)
-    }
-  }
-}
+//struct GroupCell: View {
+//    var title:String
+//    var number:Bool
+//
+//  var body: some View {
+//    HStack {
+//      Image(systemName: completed ? "checkmark.circle.fill" : "circle")
+//        .resizable()
+//        .frame(width: 20, height: 20)
+//      Text(title)
+//    }
+//  }
+//}
 
 

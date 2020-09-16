@@ -16,26 +16,27 @@ struct CameraView: View {
     @State private var image: Image? = nil
     @State private var useCamera: Bool = false
     
-    let cameraController = CameraController()
-    
     var body: some View{
-        ZStack{
-            VStack {
+        VStack{
                 HStack {
                     Button(action: {
-                        // todo
+                        self.viewRouter.currentPage = "HomePage"
                     }) {
-                        Text("Back")
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                        .padding()
                     }
-                    .foregroundColor(Color.white)
-                    .padding(.all)
+                    Spacer()
                     Button(action: {
-                        // search in group
-                    }) {
-                        Text("Search Group")
-                    }.buttonStyle(UniversalButtonStyle())
+                        self.viewRouter.currentPage = "SearchSettingPage"
+                    }){
+                    Text("Select Group")
+                        .foregroundColor(.blue)
+                    .bold()
+                    .padding()
+                    }
                 }
-            }
             image?.resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaledToFit()
@@ -61,18 +62,17 @@ struct CameraView: View {
                         }
                     }
                 }
-                Button(action: {
-                    self.viewRouter.currentPage = "CameraResult"
-                    print("viewRouter is now \(self.viewRouter.currentPage)")
-                }) {
-                Text("Search")
-                }.buttonStyle(UniversalButtonStyle())
+                if image != nil {
+                    Button(action: {
+                        self.viewRouter.currentPage = "CameraResult"
+                    }) {
+                    Text("Search")
+                    }.buttonStyle(UniversalButtonStyle())
+                }
+                
                 }
         }.sheet(isPresented: self.$showImagePicker){
             PhotoCaptureView(showImagePicker: self.$showImagePicker, image:self.$image, useCamera: self.$useCamera)
-//            Button(action: {self.viewRouter.currentPage = "CameraResult"}) {
-//                Text("Search")
-//            }
         }.navigationBarTitle(Text("Back"), displayMode: .inline)
     }
 

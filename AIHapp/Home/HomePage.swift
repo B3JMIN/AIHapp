@@ -14,7 +14,6 @@ struct HomePage: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        
         let drag = DragGesture()
             .onEnded {
                 if $0.translation.width < -100 {
@@ -33,7 +32,7 @@ struct HomePage: View {
                         .disabled(self.showMenu ? true : false)
                     if self.showMenu {
                         SideMenu()
-                            .frame(width: geometry.size.width/2)
+                            .frame(width: geometry.size.width/1.5)
                             .transition(.move(edge: .leading))
                     }
                 }
@@ -62,22 +61,34 @@ struct HomePage_Previews: PreviewProvider {
 
 
 struct MainView: View {
+    
     @EnvironmentObject var viewRouter:ViewRouter
     @Binding var showMenu: Bool
     
+//    @State private var showImagePicker: Bool = false
+//    @State private var image: Image? = nil
+//    @State private var useCamera: Bool = false
+    
     var body: some View {
         VStack {
+            Spacer()
             Image("AIH-logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width:100,height:100)
+                .frame(width:200,height:200)
                 .padding(5)
             Spacer()
+//            image?.resizable()
+//            .aspectRatio(contentMode: .fit)
+//            .scaledToFit()
             Button(action: {
                 self.viewRouter.currentPage = "CameraView"
+//                self.showImagePicker = true
+//                self.useCamera = true
             }) {
                 Image(systemName:"camera.fill")
-                    .imageScale(.large)
+                    .font(.system(size:60))
+                    .aspectRatio(contentMode: .fit)
             }
             Spacer()
             Button(action:{
@@ -90,17 +101,5 @@ struct MainView: View {
 }
 
 
-//struct GradientBackgroundStyle: ButtonStyle {
-//
-//    func makeBody(configuration: Self.Configuration) -> some View {
-//        configuration.label
-//            .frame(minWidth: 0, maxWidth: .infinity)
-//            .padding()
-//            .foregroundColor(.white)
-//            .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
-//            .cornerRadius(40)
-//            .padding(.horizontal, 20)
-//    }
-//}
 
 
