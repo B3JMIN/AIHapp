@@ -48,23 +48,18 @@ struct GroupAddImage: View {
                 .default(
                     Text("Camera"),
                     action: {
-//                        self.viewRouter.currentPage = "HomePage"
                         self.showImagePicker = true
                         self.useCamera = true
                 }),
                 .default(
                     Text("Album"),
                     action: {
-//                        self.viewRouter.currentPage = "HomePage"
                         self.showImagePicker = true
                         self.useCamera = false
                 }),
                 .cancel()
         ])
     })
-//        if isShown {
-//            ImagePicker()
-//        }
     }
 }
 
@@ -74,5 +69,3 @@ struct GroupAddImage_Previews: PreviewProvider {
     }
 }
 
-
-//showImagePicker: .constant(false), image: .constant(Image("")), useCamera: .constant(false)
