@@ -1,30 +1,30 @@
 //
-//  SmallPortrait.swift
+//  TargetImage.swift
 //  AIHapp
 //
-//  Created by Cai Huichuan on 2020-09-09.
+//  Created by Cai Huichuan on 2020-09-16.
 //  Copyright © 2020 Cai Huichuan. All rights reserved.
 //
 
 import SwiftUI
 
-struct SmallPortrait: View {
+struct TargetImage: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
-    var portrait: String
+    var ImageName: String
     var body: some View {
-        Image(portrait)
+        Image(ImageName)
         .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width:100, height: 100)
             .onTapGesture {
-                self.viewRouter.currentPage = "PersonDetail"
+                self.viewRouter.currentPage = "CameraResult"
         }
     }
 }
 
-struct SmallPortrait_Previews: PreviewProvider {
+struct TargetImage_Previews: PreviewProvider {
     static var previews: some View {
-        SmallPortrait(portrait: "turtlerock").environmentObject(ViewRouter())
+        TargetImage(ImageName: "turtlerock").environmentObject(ViewRouter())
     }
 }

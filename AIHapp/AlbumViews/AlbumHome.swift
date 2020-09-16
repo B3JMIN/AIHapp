@@ -13,12 +13,12 @@
 //    @EnvironmentObject var viewRouter:ViewRouter
 //    var ImageList: [String]
 //    
-////    @State private var isSelected:Bool
-////    @State var photoResult: [UIImage] = []
-////    Here we plan to use a beta version of PH
-////    var config: PHPickerConfiguration  {
-////        var config = PHPickerConfiguration(ph)
-////    }
+//    //    @State private var isSelected:Bool
+//    //    @State var photoResult: [UIImage] = []
+//    //    Here we plan to use a beta version of PH
+//    //    var config: PHPickerConfiguration  {
+//    //        var config = PHPickerConfiguration(ph)
+//    //    }
 //    var body: some View {
 //        ForEach (image in ImageList) {
 //            
@@ -31,12 +31,12 @@
 //        AlbumHome().environmentObject(ViewRouter())
 //    }
 //}
+
 //
-////
-////struct ImagePicker: UIViewRepresentable {
-////    @EnvironmentObject var viewRouter:ViewRouter
-////
-////    var body: some View {
-////
-////    }
-////}
+//struct ImagePicker: UIViewRepresentable {
+//    @EnvironmentObject var viewRouter:ViewRouter
+//
+//    var body: some View {
+//
+//    }
+//}

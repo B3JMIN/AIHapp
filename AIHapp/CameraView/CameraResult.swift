@@ -24,7 +24,7 @@ struct CameraResult: View {
             Image("blankImage")
             GeometryReader { geometry in
                 HStack {
-                    SmallPortrait(portrait:"chincoteague")
+                    TargetImage(ImageName: "chincoteague")
                         .frame(width:geometry.size.width/2, height:geometry.size.height/2)
                     SimilarityBar(similarity:0.3434)
                         .frame(width:geometry.size.width/2, height:geometry.size.height/2)
@@ -33,7 +33,7 @@ struct CameraResult: View {
             }.padding(.horizontal, 20)
             GeometryReader { geometry in
                 HStack{
-                    SmallPortrait(portrait:"chincoteague")
+                    TargetImage(ImageName:"chincoteague")
                         .frame(width:geometry.size.width/2, height:geometry.size.height/2)
                     SimilarityBar(similarity:0.3434)
                         .frame(width:geometry.size.width/2, height: geometry.size.height/2)

@@ -21,7 +21,7 @@ struct HomePage: View {
                         self.showMenu = false
                     }
                 }
-            }
+        }
         
         return NavigationView {
             GeometryReader { geometry in
@@ -36,19 +36,19 @@ struct HomePage: View {
                             .transition(.move(edge: .leading))
                     }
                 }
-                    .gesture(drag)
+                .gesture(drag)
             }
-                .navigationBarTitle("Home", displayMode: .inline)
-                .navigationBarItems(leading: (
-                    Button(action: {
-                        withAnimation {
-                            self.showMenu.toggle()
-                        }
-                    }) {
-                        Image(systemName: "line.horizontal.3")
-                            .imageScale(.large)
+            .navigationBarTitle("Home", displayMode: .inline)
+            .navigationBarItems(leading: (
+                Button(action: {
+                    withAnimation {
+                        self.showMenu.toggle()
                     }
-                ))
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                        .imageScale(.large)
+                }
+            ))
         }
     }
 }
@@ -65,9 +65,9 @@ struct MainView: View {
     @EnvironmentObject var viewRouter:ViewRouter
     @Binding var showMenu: Bool
     
-//    @State private var showImagePicker: Bool = false
-//    @State private var image: Image? = nil
-//    @State private var useCamera: Bool = false
+    //    @State private var showImagePicker: Bool = false
+    //    @State private var image: Image? = nil
+    //    @State private var useCamera: Bool = false
     
     var body: some View {
         VStack {
@@ -78,24 +78,36 @@ struct MainView: View {
                 .frame(width:200,height:200)
                 .padding(5)
             Spacer()
-//            image?.resizable()
-//            .aspectRatio(contentMode: .fit)
-//            .scaledToFit()
-            Button(action: {
-                self.viewRouter.currentPage = "CameraView"
-//                self.showImagePicker = true
-//                self.useCamera = true
-            }) {
-                Image(systemName:"camera.fill")
-                    .font(.system(size:60))
-                    .aspectRatio(contentMode: .fit)
+            //            image?.resizable()
+            //            .aspectRatio(contentMode: .fit)
+            //            .scaledToFit()
+            HStack {
+                Spacer()
+                Button(action: {
+                    self.viewRouter.currentPage = "CameraView"
+                    //                self.showImagePicker = true
+                    //                self.useCamera = true
+                }) {
+                    Image(systemName:"camera.fill")
+                        .font(.system(size:60))
+                        .aspectRatio(contentMode: .fit)
+                }
+                Spacer()
+                Button(action: {
+                    self.viewRouter.currentPage = "StructView"
+                }){
+                    Image(systemName: "photo.fill")
+                        .font(.system(size:60))
+                        .aspectRatio(contentMode:.fit)
+                }
+                Spacer()
             }
             Spacer()
-            Button(action:{
-                self.viewRouter.currentPage = "StructView"
-            }) {
-                Text("structView")
-            }
+            //            Button(action:{
+            //                self.viewRouter.currentPage = "StructView"
+            //            }) {
+            //                Text("structView")
+            //            }
         }
     }
 }

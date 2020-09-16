@@ -44,6 +44,12 @@ struct Home: View {
                 SearchSetting()
             }else if viewRouter.currentPage == "PhotoResult"{
                 PhotoResult()
+            }else if viewRouter.currentPage == "StructView"{
+                StructView()
+            }else if viewRouter.currentPage == "AlbumSelectPage"{
+                AlbumSelect()
+            }else if viewRouter.currentPage == "AlbumResultPage"{
+                AlbumResult()
             }
         }
     }
