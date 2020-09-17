@@ -17,20 +17,23 @@ struct HistoryResult: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .center) {
                 Button(action: {
                     self.viewRouter.currentPage = "HomePage"
-                }){
+                })
+                {
                 Image(systemName: "chevron.left")
                     .foregroundColor(.blue)
                     .imageScale(.large)
                     .padding()
+                    .padding(.trailing, 55)
                 }
                 Spacer()
+//                History is not at center
                 Text("History")
                     .bold()
                     .font(.largeTitle)
-                    .frame(width:100, height: 100, alignment: .center)
+                Spacer()
                 Text("Search")
                     .foregroundColor(.blue)
                 .bold()
@@ -39,68 +42,68 @@ struct HistoryResult: View {
             Form {
                 DatePicker("Start", selection: $resultStartDate, displayedComponents: .date)
                 DatePicker("End", selection: $resultEndDate, displayedComponents: .date)
-//                         VStack {
-//                                 HStack {
-//                                     TargetImage(portrait: "blankImage")
-//                                     SimilarityBar(similarity:0.3223)
-//                                     TargetImage(portrait: "turtlerock")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "twinlake")
-//                                     SimilarityBar(similarity: 0.8753)
-//                                     TargetImage(portrait: "silversalmoncreek")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "icybay")
-//                                     SimilarityBar(similarity: 0.7754)
-//                                     TargetImage(portrait: "chincoteague")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "silversalmoncreek")
-//                                     SimilarityBar(similarity: 0.7864)
-//                                     TargetImage(portrait: "stmarylake")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "chilkoottrail")
-//                                     SimilarityBar(similarity: 0.2190)
-//                                     TargetImage(portrait: "rainbowlake")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "umbagog")
-//                                     SimilarityBar(similarity: 0.2235)
-//                                     TargetImage(portrait: "yukon_charleyrivers")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "twinlake")
-//                                     SimilarityBar(similarity: 0.2847)
-//                                     TargetImage(portrait: "hiddenlake")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "silversalmoncreek")
-//                                     SimilarityBar(similarity: 0.4537)
-//                                     TargetImage(portrait: "icybay")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "blankImage")
-//                                     SimilarityBar(similarity: 0.6753)
-//                                     TargetImage(portrait: "stmarylake")
-//                                 }
-//                                 .padding(5)
-//                                 HStack {
-//                                     TargetImage(portrait: "turtlerock")
-//                                     SimilarityBar(similarity: 0.9784)
-//                                     TargetImage(portrait: "twinlake")
-//                                 }
-//                                 .padding(5)
-//                 }
+                         VStack {
+                                 HStack {
+                                    SmallPortrait(ImageName: "blankImage")
+                                     SimilarityBar(similarity:0.3223)
+                                     SmallPortrait(ImageName: "turtlerock")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "twinlake")
+                                     SimilarityBar(similarity: 0.8753)
+                                     SmallPortrait(ImageName: "silversalmoncreek")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "icybay")
+                                     SimilarityBar(similarity: 0.7754)
+                                     SmallPortrait(ImageName: "chincoteague")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "silversalmoncreek")
+                                     SimilarityBar(similarity: 0.7864)
+                                     SmallPortrait(ImageName: "stmarylake")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "chilkoottrail")
+                                     SimilarityBar(similarity: 0.2190)
+                                     SmallPortrait(ImageName: "rainbowlake")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "umbagog")
+                                     SimilarityBar(similarity: 0.2235)
+                                     SmallPortrait(ImageName: "yukon_charleyrivers")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "twinlake")
+                                     SimilarityBar(similarity: 0.2847)
+                                     SmallPortrait(ImageName: "hiddenlake")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "silversalmoncreek")
+                                     SimilarityBar(similarity: 0.4537)
+                                     SmallPortrait(ImageName: "icybay")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName: "blankImage")
+                                     SimilarityBar(similarity: 0.6753)
+                                     SmallPortrait(ImageName: "stmarylake")
+                                 }
+                                 .padding(5)
+                                 HStack {
+                                     SmallPortrait(ImageName:"turtlerock")
+                                     SimilarityBar(similarity: 0.9784)
+                                     SmallPortrait(ImageName:"twinlake")
+                                 }
+                                 .padding(5)
+                 }
             }
             .edgesIgnoringSafeArea(.top)
         }

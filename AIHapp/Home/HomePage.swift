@@ -103,11 +103,6 @@ struct MainView: View {
                 Spacer()
             }
             Spacer()
-            //            Button(action:{
-            //                self.viewRouter.currentPage = "StructView"
-            //            }) {
-            //                Text("structView")
-            //            }
         }
     }
 }

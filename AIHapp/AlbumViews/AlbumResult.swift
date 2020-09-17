@@ -79,66 +79,6 @@ struct AlbumResult: View {
                                height:geometry.size.height/3)
                 }
             }.padding(.horizontal, 5)
-//                            HStack {
-//                                SmallPortrait(portrait: "blankImage")
-//                                SimilarityBar(similarity:0.3223)
-//                                SmallPortrait(portrait: "turtlerock")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "twinlake")
-//                                SimilarityBar(similarity: 0.8753)
-//                                SmallPortrait(portrait: "silversalmoncreek")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "icybay")
-//                                SimilarityBar(similarity: 0.7754)
-//                                SmallPortrait(portrait: "chincoteague")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "silversalmoncreek")
-//                                SimilarityBar(similarity: 0.7864)
-//                                SmallPortrait(portrait: "stmarylake")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "chilkoottrail")
-//                                SimilarityBar(similarity: 0.2190)
-//                                SmallPortrait(portrait: "rainbowlake")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "umbagog")
-//                                SimilarityBar(similarity: 0.2235)
-//                                SmallPortrait(portrait: "yukon_charleyrivers")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "twinlake")
-//                                SimilarityBar(similarity: 0.2847)
-//                                SmallPortrait(portrait: "hiddenlake")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "silversalmoncreek")
-//                                SimilarityBar(similarity: 0.4537)
-//                                SmallPortrait(portrait: "icybay")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "blankImage")
-//                                SimilarityBar(similarity: 0.6753)
-//                                SmallPortrait(portrait: "stmarylake")
-//                            }
-//                            .padding(5)
-//                            HStack {
-//                                SmallPortrait(portrait: "turtlerock")
-//                                SimilarityBar(similarity: 0.9784)
-//                                SmallPortrait(portrait: "twinlake")
-//                            }
-//                            .padding(5)
         }
     }
 }

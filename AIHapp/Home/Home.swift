@@ -50,6 +50,14 @@ struct Home: View {
                 AlbumSelect()
             }else if viewRouter.currentPage == "AlbumResultPage"{
                 AlbumResult()
+            }else if viewRouter.currentPage == "ImageDetail"{
+                ImageDetail()
+            }else if viewRouter.currentPage == "GroupStructView"{
+                GroupStructView()
+            }else if viewRouter.currentPage == "PersonDeletePage"{
+                PersonDelete()
+            }else if viewRouter.currentPage == "ImageAddPage" {
+                ImageAdd()
             }
         }
     }

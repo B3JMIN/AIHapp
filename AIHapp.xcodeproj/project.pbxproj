@@ -43,6 +43,11 @@
 		43659E8325126DDE008E128D /* PhotoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E8225126DDE008E128D /* PhotoResult.swift */; };
 		43659E852512ACD9008E128D /* TargetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E842512ACD9008E128D /* TargetImage.swift */; };
 		43659E872512B47E008E128D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E862512B47E008E128D /* SearchBar.swift */; };
+		43659E892513A8CF008E128D /* SmallPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E882513A8CF008E128D /* SmallPortrait.swift */; };
+		43659E8C2513B257008E128D /* ImageAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E8B2513B257008E128D /* ImageAdd.swift */; };
+		43659E902513BAE3008E128D /* GroupStructView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E8F2513BAE3008E128D /* GroupStructView.swift */; };
+		43659E922513BDA3008E128D /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E912513BDA3008E128D /* ImageDetail.swift */; };
+		43659E942513D73B008E128D /* PersonDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43659E932513D73B008E128D /* PersonDelete.swift */; };
 		43DD8A8525028BE50072A22B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8425028BE50072A22B /* ImagePicker.swift */; };
 		43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */; };
 		43DD8A8B2502BAF70072A22B /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8A8A2502BAF70072A22B /* TableView.swift */; };
@@ -68,7 +73,6 @@
 		43DD8ABD2506B2300072A22B /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43DD8AB12506B22F0072A22B /* silversalmoncreek.jpg */; };
 		43DD8ABE2506B2300072A22B /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43DD8AB22506B2300072A22B /* umbagog.jpg */; };
 		43DD8AC02506B6B00072A22B /* blankImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 43DD8ABF2506B6B00072A22B /* blankImage.png */; };
-		43DD8AC3250816510072A22B /* AlbumHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC2250816510072A22B /* AlbumHome.swift */; };
 		43DD8AC5250816650072A22B /* AlbumSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC4250816650072A22B /* AlbumSelect.swift */; };
 		43DD8AC7250816870072A22B /* AlbumResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8AC6250816870072A22B /* AlbumResult.swift */; };
 		43DD8ACB250818F40072A22B /* HistoryDateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD8ACA250818F40072A22B /* HistoryDateSelector.swift */; };
@@ -136,6 +140,11 @@
 		43659E8225126DDE008E128D /* PhotoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResult.swift; sourceTree = "<group>"; };
 		43659E842512ACD9008E128D /* TargetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetImage.swift; sourceTree = "<group>"; };
 		43659E862512B47E008E128D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		43659E882513A8CF008E128D /* SmallPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPortrait.swift; sourceTree = "<group>"; };
+		43659E8B2513B257008E128D /* ImageAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAdd.swift; sourceTree = "<group>"; };
+		43659E8F2513BAE3008E128D /* GroupStructView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStructView.swift; sourceTree = "<group>"; };
+		43659E912513BDA3008E128D /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
+		43659E932513D73B008E128D /* PersonDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDelete.swift; sourceTree = "<group>"; };
 		43DD8A8425028BE50072A22B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		43DD8A8625028C1D0072A22B /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		43DD8A8A2502BAF70072A22B /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -161,7 +170,6 @@
 		43DD8AB12506B22F0072A22B /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		43DD8AB22506B2300072A22B /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
 		43DD8ABF2506B6B00072A22B /* blankImage.png */ = {isa = PBXFileReference; explicitFileType = image.jpeg; path = blankImage.png; sourceTree = "<group>"; };
-		43DD8AC2250816510072A22B /* AlbumHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHome.swift; sourceTree = "<group>"; };
 		43DD8AC4250816650072A22B /* AlbumSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSelect.swift; sourceTree = "<group>"; };
 		43DD8AC6250816870072A22B /* AlbumResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResult.swift; sourceTree = "<group>"; };
 		43DD8ACA250818F40072A22B /* HistoryDateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDateSelector.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 		434DE88F24FFF446000C2356 /* AIHapp */ = {
 			isa = PBXGroup;
 			children = (
+				43659E8A2513B220008E128D /* ImageViews */,
 				43659E61250C1390008E128D /* Home */,
 				43659E5E250C1215008E128D /* Welcome */,
 				43659E4B250AAC9E008E128D /* Person */,
@@ -275,6 +284,8 @@
 				43659E7225112556008E128D /* GroupAddImage.swift */,
 				43659E7825116276008E128D /* GroupAdd.swift */,
 				43659E862512B47E008E128D /* SearchBar.swift */,
+				43659E8F2513BAE3008E128D /* GroupStructView.swift */,
+				43659E912513BDA3008E128D /* ImageDetail.swift */,
 			);
 			path = GroupViews;
 			sourceTree = "<group>";
@@ -340,6 +351,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		43659E8A2513B220008E128D /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				43659E8B2513B257008E128D /* ImageAdd.swift */,
+				43659E932513D73B008E128D /* PersonDelete.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
 		43DD8A912502DD4E0072A22B /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +405,7 @@
 				43DD8AD0250930870072A22B /* SimilarityBar.swift */,
 				43659E49250AA802008E128D /* MetaDataCell.swift */,
 				43659E6C250FEE00008E128D /* TypicalButton.swift */,
+				43659E882513A8CF008E128D /* SmallPortrait.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -392,7 +413,6 @@
 		43DD8AC12508162A0072A22B /* AlbumViews */ = {
 			isa = PBXGroup;
 			children = (
-				43DD8AC2250816510072A22B /* AlbumHome.swift */,
 				43659E702511078D008E128D /* StructView.swift */,
 				43DD8AC4250816650072A22B /* AlbumSelect.swift */,
 				43DD8AC6250816870072A22B /* AlbumResult.swift */,
@@ -551,6 +571,7 @@
 			files = (
 				43659E4F250AB20E008E128D /* userDate.swift in Sources */,
 				43659E60250C1372008E128D /* Welcome.swift in Sources */,
+				43659E902513BAE3008E128D /* GroupStructView.swift in Sources */,
 				43659E48250AA51A008E128D /* CameraEdit.swift in Sources */,
 				43DD8AC7250816870072A22B /* AlbumResult.swift in Sources */,
 				43659E6D250FEE00008E128D /* TypicalButton.swift in Sources */,
@@ -561,6 +582,7 @@
 				434DE89124FFF446000C2356 /* AppDelegate.swift in Sources */,
 				43DD8AA62506AA530072A22B /* PersonList.swift in Sources */,
 				43659E53250AD050008E128D /* Home.swift in Sources */,
+				43659E922513BDA3008E128D /* ImageDetail.swift in Sources */,
 				43659E712511078D008E128D /* StructView.swift in Sources */,
 				434DE89324FFF446000C2356 /* SceneDelegate.swift in Sources */,
 				43659E4A250AA802008E128D /* MetaDataCell.swift in Sources */,
@@ -585,14 +607,16 @@
 				43DD8A8725028C1D0072A22B /* PhotoCaptureView.swift in Sources */,
 				43659E63250C13AD008E128D /* SideMenu.swift in Sources */,
 				43DD8A9C2502E9C20072A22B /* Portrait.swift in Sources */,
+				43659E892513A8CF008E128D /* SmallPortrait.swift in Sources */,
 				43DD8AC5250816650072A22B /* AlbumSelect.swift in Sources */,
-				43DD8AC3250816510072A22B /* AlbumHome.swift in Sources */,
 				43659E872512B47E008E128D /* SearchBar.swift in Sources */,
 				43DD8ACB250818F40072A22B /* HistoryDateSelector.swift in Sources */,
 				43DD8AA42506A94C0072A22B /* PersonRow.swift in Sources */,
 				43659E55250AD101008E128D /* ViewRouter.swift in Sources */,
 				43659E67250FB028008E128D /* SliderView.swift in Sources */,
+				43659E8C2513B257008E128D /* ImageAdd.swift in Sources */,
 				43659E7325112556008E128D /* GroupAddImage.swift in Sources */,
+				43659E942513D73B008E128D /* PersonDelete.swift in Sources */,
 				43659E69250FB590008E128D /* GroupSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

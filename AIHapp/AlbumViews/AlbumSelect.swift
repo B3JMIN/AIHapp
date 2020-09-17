@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AlbumSelect: View {
     @EnvironmentObject var viewRouter:ViewRouter
-    
+    @State var phase = 0
     var body: some View {
         VStack {
             HStack {
@@ -30,24 +30,22 @@ struct AlbumSelect: View {
                 }
             }
             
-            //            Content
-            //                GeometryReader { geometry in
-            //                    HStack {
-            //                        SmallPortrait(portrait:"blankImage")
-            //                            .frame(width:geometry.size.width/2, height:geometry.size.height/2)
-            //                        SmallPortrait(portrait:"turtlerock")
-            //                            .frame(width:geometry.size.width/2,
-            //                                   height:geometry.size.height/2)
-            //                        SmallPortrait(portrait:"icybay")
-            //                            .frame(width:geometry.size.width/2,
-            //                                   height:geometry.size.height/2)
-            //                    }.padding(.horizontal, 5)
-            //                }.padding(.horizontal, 20)
             List {
                 VStack {
                     HStack {
                         //                                  Here should use another cell for not selecting, only  for viewing
-                        CellwithButton(isSelected:false,imageName:"systemName: plus")
+                        ZStack{
+                            Image(systemName: "plus")
+                                .padding(20)
+                                .font(.system(size: 60))
+                                .foregroundColor(.blue)
+                            Rectangle()
+                                .strokeBorder(style:StrokeStyle(lineWidth: 4, dash : [10], dashPhase: 0))
+                                .foregroundColor(.blue)
+                                .frame(width: 100, height: 100)
+                                .onAppear{self.phase -= 20}
+                                .animation(Animation.linear.repeatForever(autoreverses: false))
+                        }
                         CellwithButton(isSelected:false, imageName:"turtlerock")
                         CellwithButton(isSelected:false, imageName:"stmarylake")
                     }
@@ -100,20 +98,6 @@ struct AlbumSelect: View {
                     
                 }
             }
-            //            VStack {
-            //                HStack {
-            //                    Image(systemName: "plus")
-            //                    Image("blankImage")
-            //                    Image("turtlerock")
-            //                }.padding(20)
-            //                // here can use for each to layout, but i choose to handcoded
-            //                HStack {
-            //                    Image("icybay")
-            //                    Image("lakemcdonald")
-            //                    EmptyView()
-            //                }.padding(20)
-            //            }
-            //            Button
             Button(action:{
                 self.viewRouter.currentPage = "AlbumResultPage"
             }) {

@@ -42,7 +42,7 @@ struct SideMenu: View {
             .padding(.top,30)
             HStack {
                 Button (action: {
-                    self.viewRouter.currentPage = "HistoryResult"
+                    self.viewRouter.currentPage = "HistoryDateSelector"
                 }){
                     Image(systemName: "clock")
                         .foregroundColor(.white)

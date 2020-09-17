@@ -29,7 +29,7 @@ struct GroupSearch: View {
                 }
                 Spacer()
                 Button(action: {
-//                    self.isAdding.toggle()
+                    //                    self.isAdding.toggle()
                     let alertHC = UIHostingController(rootView: MyAlert())
                     
                     alertHC.preferredContentSize = CGSize(width: 300, height: 200)
@@ -49,7 +49,11 @@ struct GroupSearch: View {
                 ForEach(self.groupNames.filter{
                     self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                 }, id: \.self) { name in
-                    Text(name)
+                    Button (action: {
+                        self.viewRouter.currentPage = "GroupAddImage"
+                    }){
+                        Text(name)
+                    }
                 }
             }
             
@@ -76,9 +80,9 @@ struct GroupSearch_Previews: PreviewProvider {
 
 struct MyAlert: View {
     @State private var text: String = ""
-
+    
     var body: some View {
-
+        
         VStack {
             Text("Enter Input").font(.headline).padding()
             TextField("Enter your GroupN Name", text:$text)
@@ -91,9 +95,9 @@ struct MyAlert: View {
                     Text("Done")
                 }
                 Spacer()
-
+                
                 Divider()
-
+                
                 Spacer()
                 Button(action: {
                     UIApplication.shared.windows[0].rootViewController?.dismiss(animated: true, completion: {})
@@ -101,9 +105,9 @@ struct MyAlert: View {
                     Text("Cancel")
                 }
             }.padding(0)
-//                .frame(width:250, height: 200)
-
-
-            }.background(Color(white: 0.9))
+            //                .frame(width:250, height: 200)
+            
+            
+        }.background(Color(white: 0.9))
     }
 }

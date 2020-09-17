@@ -25,6 +25,7 @@ struct HistoryDateSelector: View {
                     .foregroundColor(.blue)
                     .imageScale(.large)
                     .padding()
+                    .padding(.trailing, 55)
                 }
                 Spacer()
                 Text("History")
