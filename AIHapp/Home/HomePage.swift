@@ -63,11 +63,11 @@ struct HomePage_Previews: PreviewProvider {
 struct MainView: View {
     
     @EnvironmentObject var viewRouter:ViewRouter
-    @Binding var showMenu: Bool
     
-    //    @State private var showImagePicker: Bool = false
-    //    @State private var image: Image? = nil
-    //    @State private var useCamera: Bool = false
+    @Binding var showMenu: Bool
+    @State private var showImagePicker: Bool = false
+    @State private var useCamera:Bool = false
+    @State private var image:Image?=nil
     
     var body: some View {
         VStack {
@@ -84,9 +84,9 @@ struct MainView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    self.viewRouter.currentPage = "CameraView"
-                    //                self.showImagePicker = true
-                    //                self.useCamera = true
+//                    self.viewRouter.currentPage = "CameraView"
+                                    self.showImagePicker = true
+                                    self.useCamera = true
                 }) {
                     Image(systemName:"camera.fill")
                         .font(.system(size:60))
@@ -94,7 +94,8 @@ struct MainView: View {
                 }
                 Spacer()
                 Button(action: {
-                    self.viewRouter.currentPage = "StructView"
+                    self.showImagePicker = true
+                    self.useCamera = false
                 }){
                     Image(systemName: "photo.fill")
                         .font(.system(size:60))
@@ -103,7 +104,9 @@ struct MainView: View {
                 Spacer()
             }
             Spacer()
-        }
+        }.sheet(isPresented: self.$showImagePicker){
+            PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$image, useCamera: self.$useCamera)
+        }.navigationBarTitle(Text("Back"), displayMode: .inline)
     }
 }
 

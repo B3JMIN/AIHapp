@@ -10,8 +10,15 @@ import SwiftUI
 //
 //
 struct UniversalButtonStyle: ButtonStyle {
-//    var bgColor: Color
-
+//   set for iPhone and iPad
+    var width:CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            return UIScreen.main.bounds.width * 0.9
+        } else {
+            return UIScreen.main.bounds.width * 0.4
+        }
+    }
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .frame(minWidth:0, maxWidth:.infinity)

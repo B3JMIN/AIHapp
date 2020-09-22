@@ -42,6 +42,7 @@ struct HistoryResult: View {
             Form {
                 DatePicker("Start", selection: $resultStartDate, displayedComponents: .date)
                 DatePicker("End", selection: $resultEndDate, displayedComponents: .date)
+//                All here can use a foreach loop to represent
                          VStack {
                                  HStack {
                                     SmallPortrait(ImageName: "blankImage")

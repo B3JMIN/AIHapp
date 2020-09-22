@@ -42,9 +42,9 @@ struct SearchSetting: View {
                 Spacer()
             }
             List {
-                    SelectGroup(isSelected: false, GroupName: "Group 2", GroupNumber: 41)
-                    SelectGroup(isSelected: true, GroupName: "Group 41", GroupNumber: 14)
-                    SelectGroup(isSelected: false, GroupName: "Group 31", GroupNumber: 23)
+                    SelectGroup(GroupName: "Group 2", GroupNumber: 41)
+                    SelectGroup(GroupName: "Group 41", GroupNumber: 14)
+                    SelectGroup(GroupName: "Group 31", GroupNumber: 23)
             }
         }
     }
@@ -58,7 +58,7 @@ struct SearchSetting_Previews: PreviewProvider {
 
 
 struct SelectGroup: View {
-    @State var isSelected: Bool = false
+    @State private var isSelected: Bool = false
     var GroupName: String
     var GroupNumber: Int
     
