@@ -46,53 +46,53 @@ struct AlbumSelect: View {
                                 .onAppear{self.phase -= 20}
                                 .animation(Animation.linear.repeatForever(autoreverses: false))
                         }
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
                         
                     }
                     

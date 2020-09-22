@@ -41,64 +41,64 @@ struct StructView: View {
                 //            }.padding(EdgeInsets.init(top: 0, leading: -20, bottom: 0, trailing: -20))
                 VStack {
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton(imageName:"chilkoottrail")
                     }
                     HStack {
-                        CellwithButton(isSelected:false,imageName:"blankImage")
-                        CellwithButton(isSelected:false, imageName:"turtlerock")
-                        CellwithButton(isSelected:false, imageName:"stmarylake")
-                        CellwithButton(isSelected:false, imageName:"chilkoottrail")
+                        CellwithButton(imageName:"blankImage")
+                        CellwithButton(imageName:"turtlerock")
+                        CellwithButton(imageName:"stmarylake")
+                        CellwithButton( imageName:"chilkoottrail")
                     }
                     
                 }
@@ -133,7 +133,7 @@ struct StructView_Previews: PreviewProvider {
 
 
 struct CellwithButton: View {
-    @State var isSelected:Bool = false
+    @State private var isSelected:Bool = false
     //    let btnCheckMarkImage  = UIImage(CGImage: nil)
     //    let btnBlankImage = UIImage(contentsOfFile: "")
     var imageName:String

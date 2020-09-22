@@ -45,13 +45,13 @@ struct PersonDelete: View {
                         .onAppear{self.phase -= 20}
                         .animation(Animation.linear.repeatForever(autoreverses: false))
                 }
-                CellwithButton(isSelected: false, imageName: "turtlerock")
-                CellwithButton(isSelected: false, imageName: "blankImage")
+                CellwithButton(imageName: "turtlerock")
+                CellwithButton(imageName: "blankImage")
             }
             HStack {
-                CellwithButton(isSelected: false, imageName: "icybay")
-                CellwithButton(isSelected: false, imageName: "chilkoottrail")
-                CellwithButton(isSelected: false, imageName: "rainbowlake")
+                CellwithButton(imageName: "icybay")
+                CellwithButton(imageName: "chilkoottrail")
+                CellwithButton(imageName: "rainbowlake")
             }
             Spacer()
             Button( action: {
