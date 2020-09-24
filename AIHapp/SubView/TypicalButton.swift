@@ -10,7 +10,7 @@ import SwiftUI
 //
 //
 struct UniversalButtonStyle: ButtonStyle {
-//   set for iPhone and iPad
+    //   set for iPhone and iPad
     var width:CGFloat {
         if UIDevice.current.userInterfaceIdiom == .phone{
             return UIScreen.main.bounds.width * 0.9

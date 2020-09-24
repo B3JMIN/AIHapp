@@ -18,9 +18,9 @@ struct Home: View {
             }else if viewRouter.currentPage == "CameraResult" {
                 CameraResult()
             }
-//            else if viewRouter.currentPage == "CameraView" {
-//                CameraView()
-//            }
+                //            else if viewRouter.currentPage == "CameraView" {
+                //                CameraView()
+                //            }
             else if viewRouter.currentPage == "HistoryResult" {
                 HistoryResult()
             }else if viewRouter.currentPage == "PersonDetail" {

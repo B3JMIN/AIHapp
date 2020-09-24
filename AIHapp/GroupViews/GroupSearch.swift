@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GroupSearch: View {
     @EnvironmentObject var viewRouter: ViewRouter
-//    let groupNames = ["Benjamin", "Scott", "Austin", "Eric", "Aroron", "Mike", "Guangni","Ben"]
+    //    let groupNames = ["Benjamin", "Scott", "Austin", "Eric", "Aroron", "Mike", "Guangni","Ben"]
     let screenSize = UIScreen.main.bounds
     @State private var groupNames = (1...5).map{"\($0)"}
     @State private var addedText = ""
@@ -58,11 +58,11 @@ struct GroupSearch: View {
                 }
                 
             }
-        .padding()
-//            .accentColor(Color(UIcolor.systemRed))
+            .padding()
+            //            .accentColor(Color(UIcolor.systemRed))
             AddAlert(title: "Name your new group", isShown: $isPresented, text: $addedText, onDone: { addedText in
-                        self.groupNames.append(addedText)
-                       })
+                self.groupNames.append(addedText)
+            })
         }
     }
     

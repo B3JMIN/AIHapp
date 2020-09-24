@@ -46,7 +46,7 @@ struct SimilarityBar: View {
                 .foregroundColor(Color.blue)
                 .rotationEffect(Angle(degrees: 270.0))
                 .animation(.linear)
-
+            
             Text(String(format: "%5.2f%%%", min(self.similarity, 1.0)*100.0))
                 .font(.body)
                 .bold()

@@ -41,8 +41,8 @@ struct CameraResult: View {
             }.padding(.horizontal, 20)
             Button(action: {
                 self.viewRouter.currentPage = "HistoryDateSelector"
-                }) {
-            Text("Search History")
+            }) {
+                Text("Search History")
             }.buttonStyle(UniversalButtonStyle())
             // do some styling for the button
         }

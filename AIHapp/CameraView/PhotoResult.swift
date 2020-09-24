@@ -17,19 +17,19 @@ struct PhotoResult: View {
                 Button(action: {
                     self.viewRouter.currentPage = "CameraView"
                 }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-                    .imageScale(.large)
-                    .padding()
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                        .padding()
                 }
                 Spacer()
                 Button(action: {
                     self.viewRouter.currentPage = "SeearchSetting"
                 }){
-                Text("Select Group")
-                    .foregroundColor(.blue)
-                .bold()
-                    .padding(.horizontal, 10)
+                    Text("Select Group")
+                        .foregroundColor(.blue)
+                        .bold()
+                        .padding(.horizontal, 10)
                 }
             }
             Spacer()

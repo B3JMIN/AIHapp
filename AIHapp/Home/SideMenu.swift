@@ -20,25 +20,25 @@ struct SideMenu: View {
                 Button(action: {
                     self.viewRouter.currentPage = "GroupSearch"
                 }) {
-                Text("Group")
-                    .foregroundColor(.blue)
-                    .font(.title)
+                    Text("Group")
+                        .foregroundColor(.blue)
+                        .font(.title)
                 }
-
+                
             }
-                HStack {
-                    Image(systemName:"person")
-                        .foregroundColor(.white)
-                        .imageScale(.large)
-                    Button(action: {
-                        self.viewRouter.currentPage = "GroupSearch"
-                    }) {
+            HStack {
+                Image(systemName:"person")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                Button(action: {
+                    self.viewRouter.currentPage = "GroupSearch"
+                }) {
                     Text("Group")
                         .foregroundColor(.white)
                         .font(.title)
-                    }
-
                 }
+                
+            }
             .padding(.top,30)
             HStack {
                 Button (action: {
@@ -47,9 +47,9 @@ struct SideMenu: View {
                     Image(systemName: "clock")
                         .foregroundColor(.white)
                         .imageScale(.large)
-                Text("Search History")
-                    .foregroundColor(.white)
-                    .font(.title)
+                    Text("Search History")
+                        .foregroundColor(.white)
+                        .font(.title)
                 }
             }
             .padding(.top,30)
@@ -63,7 +63,7 @@ struct SideMenu: View {
                     .font(.headline)
             }
             .padding(.bottom,30)
-            }
+        }
         .padding()
         .frame(maxWidth:.infinity, alignment: .leading)
         .background(Color.blue)

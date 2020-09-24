@@ -17,7 +17,7 @@ struct SliderView: View {
     var body: some View {
         VStack {
             HStack {
-//                Text("\(Double(minimumValue))")
+                //                Text("\(Double(minimumValue))")
                 Text("Threshold: ")
                 Text(String(format: " %.2f", minimumValue))
                 Slider(value: $sliderValue, in: minimumValue...maximumValue)

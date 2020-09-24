@@ -51,7 +51,7 @@ struct GroupAddImage: View {
                                 .onAppear{self.phase -= 20}
                                 .animation(Animation.linear.repeatForever(autoreverses: false))
                         }
-                            .frame(width:geometry.size.width/3)
+                        .frame(width:geometry.size.width/3)
                     }
                     Image("blankImage")
                         .resizable()
@@ -73,8 +73,8 @@ struct GroupAddImage: View {
                 .default(
                     Text("Camera"),
                     action: {
-//                        self.showImagePicker = true
-//                        self.useCamera = true
+                        //                        self.showImagePicker = true
+                        //                        self.useCamera = true
                         self.viewRouter.currentPage = "ImageAddPage"
                 }),
                 .default(

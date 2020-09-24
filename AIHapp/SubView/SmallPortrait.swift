@@ -14,7 +14,7 @@ struct SmallPortrait: View {
     var ImageName: String
     var body: some View {
         Image(ImageName)
-        .resizable()
+            .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width:100, height: 100)
             .onTapGesture {

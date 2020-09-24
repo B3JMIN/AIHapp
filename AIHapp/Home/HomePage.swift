@@ -84,9 +84,9 @@ struct MainView: View {
             HStack {
                 Spacer()
                 Button(action: {
-//                    self.viewRouter.currentPage = "CameraView"
-                                    self.showImagePicker = true
-                                    self.useCamera = true
+                    //                    self.viewRouter.currentPage = "CameraView"
+                    self.showImagePicker = true
+                    self.useCamera = true
                 }) {
                     Image(systemName:"camera.fill")
                         .font(.system(size:60))

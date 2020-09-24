@@ -18,19 +18,19 @@ struct SearchSetting: View {
                 Button(action: {
                     self.viewRouter.currentPage = "CameraView"
                 }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-                    .imageScale(.large)
-                    .padding()
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                        .padding()
                 }
                 Spacer()
                 Button(action: {
                     self.viewRouter.currentPage = "PhotoResult"
                 }){
-                Text("Save")
-                    .foregroundColor(.blue)
-                .bold()
-                .padding()
+                    Text("Save")
+                        .foregroundColor(.blue)
+                        .bold()
+                        .padding()
                 }
             }
             HStack {
@@ -42,9 +42,9 @@ struct SearchSetting: View {
                 Spacer()
             }
             List {
-                    SelectGroup(GroupName: "Group 2", GroupNumber: 41)
-                    SelectGroup(GroupName: "Group 41", GroupNumber: 14)
-                    SelectGroup(GroupName: "Group 31", GroupNumber: 23)
+                SelectGroup(GroupName: "Group 2", GroupNumber: 41)
+                SelectGroup(GroupName: "Group 41", GroupNumber: 14)
+                SelectGroup(GroupName: "Group 31", GroupNumber: 23)
             }
         }
     }

@@ -30,10 +30,10 @@ struct ImageDetail: View {
                 Button( action: {
                     self.isEditing = 1
                 }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-                    .imageScale(.large)
-                    .padding()
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                        .padding()
                 }
                 Spacer()
             }
@@ -71,42 +71,7 @@ struct ImageDetail: View {
                 Spacer()
             }
             else {
-                VStack {
-//                    Spacer()
-                    TextField("Enter Person's Name", text: $personName)
-                        .foregroundColor(.blue)
-                        .font(.title)
-                        .padding(.horizontal,30)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    TextField("Enter Person's Description", text: $personDescription)
-                        .foregroundColor(.blue)
-                        .font(.subheadline)
-                        .padding(.horizontal,30)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    HStack {
-                        Text("Edit Your MetaData:")
-                            .font(.title)
-                            .padding(.horizontal, 30)
-                        Spacer()
-                    }
-                    HStack {
-                        TextField("eyeColor etc", text: $userMetaDataKey)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        Spacer()
-                        TextField("Red etc", text: $userMetaDataValue)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        Spacer()
-                        Button( action: {
-                            self.userMetaDataValue = ""
-                            self.userMetaDataKey = ""
-                        }) {
-                            Image(systemName: "trash")
-                                .font(.system(size: 20))
-                                .foregroundColor(.gray)
-                        }
-                    }.padding(.horizontal, 30)
-                    Spacer()
-                }
+                ImageDetaiEdit()
             }
             Button( action:{
                 if self.isEditing == 0 {

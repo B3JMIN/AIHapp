@@ -56,7 +56,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         else{
             picker.sourceType = .photoLibrary
         }
-//        picker.sourceType = .camera
+        //        picker.sourceType = .camera
         return picker
     }
     

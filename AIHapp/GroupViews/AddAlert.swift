@@ -9,22 +9,22 @@
 import SwiftUI
 
 struct AddAlert: View {
-
+    
     let screenSize = UIScreen.main.bounds
     var title:String = ""
     @Binding var isShown:Bool
     @Binding var text:String
     var onDone:(String) -> Void = {_ in}
     var onCancel:() ->Void = {}
-
-
+    
+    
     var body: some View {
         VStack(spacing:20){
             Text(title)
                 .font(.headline)
             Text("")
             TextField("",text: $text)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             HStack(spacing:20) {
                 Button("Done"){
                     self.isShown = false

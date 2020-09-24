@@ -21,11 +21,11 @@ struct HistoryDateSelector: View {
                 Button(action:{
                     self.viewRouter.currentPage = "HomePage"
                 }){
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-                    .imageScale(.large)
-                    .padding()
-                    .padding(.trailing, 55)
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                        .padding()
+                        .padding(.trailing, 55)
                 }
                 Spacer()
                 Text("History")
@@ -36,16 +36,16 @@ struct HistoryDateSelector: View {
                 Button(action: {
                     self.viewRouter.currentPage = "HistoryResult"
                 }){
-                Text("Search")
-                    .foregroundColor(.blue)
-                    .bold()
-                    .padding()
-            }
+                    Text("Search")
+                        .foregroundColor(.blue)
+                        .bold()
+                        .padding()
+                }
             }
             Form {
                 DatePicker("Start", selection: $selectedStartDate, displayedComponents: .date)
                 DatePicker("End", selection: $selectedEndDate,
-                    displayedComponents: .date)
+                           displayedComponents: .date)
                 VStack {
                     Text("Please select a Range of Date")
                 }

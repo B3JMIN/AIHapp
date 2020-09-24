@@ -61,18 +61,18 @@ struct PersonDelete: View {
                 Text("Delete")
             }.buttonStyle(UniversalButtonStyle())
         }
-            .alert( isPresented: $showDeleteAlert){
-                    Alert(
-                        title: Text("Delete Person"),
-                        message: Text("Are you sure you want to delete this person?"),
-                        primaryButton: .destructive(Text("Yes"), action: {
-                            // some action for yes button
-                        }),
-                        secondaryButton: .cancel(Text("No"), action: {
-                            // some actions for no button
-                        })
-                    )
-            }}
+        .alert( isPresented: $showDeleteAlert){
+            Alert(
+                title: Text("Delete Person"),
+                message: Text("Are you sure you want to delete this person?"),
+                primaryButton: .destructive(Text("Yes"), action: {
+                    // some action for yes button
+                }),
+                secondaryButton: .cancel(Text("No"), action: {
+                    // some actions for no button
+                })
+            )
+        }}
 }
 
 struct PersonDelete_Previews: PreviewProvider {
